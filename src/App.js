@@ -13,6 +13,8 @@ export const App = () => {
       setUsers(users)
     }
     fetchUserAndSetUsers()
+
+    APIHelper.measureTime()
   }, [])
 
   const createUser = async e => {
